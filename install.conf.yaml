@@ -1,0 +1,20 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.tmux.conf: ./tmux/tmux.conf
+
+    ~/.config/fish/: 
+      create: true
+      glob: true
+      path: ./fish/*
+      relink: true
+
+    ~/.config/nvim:
+      create: true
+      glob: true
+      path: ./nvim/*
+      relink: true
