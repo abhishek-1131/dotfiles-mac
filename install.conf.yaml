@@ -6,6 +6,12 @@
 
 - link:
     ~/.tmux.conf: ./tmux/tmux.conf
+    ~/.tmux.conf.local: ./tmux/tmux_conf_local
+    ~/.tmux: 
+      create: true
+      glob: true
+      path: ./tmux/tmux_plugins/
+      relink: true
 
     ~/.config/fish/: 
       create: true
