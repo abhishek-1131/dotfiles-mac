@@ -7,10 +7,10 @@
 - link:
     ~/.tmux.conf: ./tmux/tmux.conf
     ~/.tmux.conf.local: ./tmux/tmux_conf_local
-    ~/.tmux: 
+    ~/.tmux/plugins/tpm: 
       create: true
       glob: true
-      path: ./tmux/tmux_plugins/
+      path: ./tmux/tmux_plugins/tpm/*
       relink: true
 
     ~/.config/fish/: 

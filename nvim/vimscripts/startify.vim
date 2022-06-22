@@ -19,11 +19,11 @@ let g:startify_bookmarks = [
             \ { 'm': '~/.config/nvim/lua/user/keymaps.lua'},
             \ { 'p': '~/.config/nvim/lua/user/plugins.lua'},
             \ { 'v': '~/vimwiki/Vim_Cheatsheet.md' },
+            \ { 's': '~/Desktop/scratchpad.py' },
             \ ]
 
 let g:startify_commands = [
-            \{'s' : 'StartupTime'},
-            \{'b' : 'Telescope file_browser'},
+            \{',s' : 'StartupTime'},
             \]
 
 

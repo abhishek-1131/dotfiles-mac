@@ -16,9 +16,9 @@ vim.keymap.set("i", "kj", "<Esc>")
 vim.keymap.set("n", "<space>bh", ":Startify<CR>")
 
 --Leader Mappings
-vim.keymap.set("n", "<Leader>.", ":Telescope find_files cwd=~/.config/nvim<CR>")
+vim.keymap.set("n", "<Leader>.", ":Telescope find_files cwd=~/dotfiles/nvim<CR>")
 vim.keymap.set("n", "<Leader>f", ":Telescope find_files<CR>")
-vim.keymap.set("n", "<Leader>h", ":Telescope oldfiles<CR> ")
+vim.keymap.set("n", "<Leader>h", ":Telescope oldfiles<CR>")
 vim.keymap.set("n", "<Leader>g", ":Telescope live_grep<CR>")
 vim.keymap.set("n", "<Leader>d", ":Telescope diagnostics<CR>")
 vim.keymap.set("n", "<Leader>s", ":Telescope current_buffer_fuzzy_find<CR>")
