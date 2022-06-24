@@ -3,7 +3,7 @@ vim.g.mapleader = ","
 vim.g.maplocalleader = ","
 
 --Basic
-vim.cmd("command W w")
+vim.cmd("command! W w")
 vim.keymap.set("n", "Ð", ":bd <CR>")
 vim.keymap.set("n", "Q", "<Nop>")
 vim.keymap.set("n", "Y", "y$")
@@ -29,10 +29,12 @@ vim.keymap.set("n", "<Leader>x", ":Telescope neoclip<CR>")
 vim.keymap.set( "n", "<leader>cd", ":lua require'telescope'.extensions.zoxide.list{}<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>q", ":Telescope file_browser<CR>", { noremap = true })
 
+vim.keymap.set("n", "<leader>ci", "<cmd>lua require('Comment.api').toggle_current_linewise()<CR>", { noremap = true, silent = true })
+vim.keymap.set("x", "<leader>ci", '<ESC><CMD>lua require("Comment.api").toggle_linewise_op(vim.fn.visualmode())<CR>')
 vim.keymap.set("n", "<Leader>r", ":luafile %<CR>")
 vim.keymap.set("n", "<Leader>e", ":NvimTreeToggle<CR>")
 vim.keymap.set("n", "<Leader>t", ":TagbarToggle<CR>")
-vim.keymap.set("n", "<Leader>p", ":Format<CR>")
+vim.keymap.set("n", "<Leader>bf", ":Format<CR>")
 vim.keymap.set("n", "<Leader>js", ":G<CR>")
 vim.keymap.set("n", "<Leader>jh", ":diffget //2<CR>")
 vim.keymap.set("n", "<Leader>jl", ":diffget //3<CR>")
@@ -64,8 +66,8 @@ nnoremap ˍ    :vertical resize +2<CR>
 ]])
 
 --Switch Open Buffer
-vim.keymap.set("n", "H", ":bprev<CR>")
-vim.keymap.set("n", "L", ":bnext<CR>")
+vim.keymap.set("n", "H", ":bprev<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "L", ":bnext<CR>", { noremap = true, silent = true })
 
 --Better Tabbing
 vim.keymap.set("v", "<", "<gv")
