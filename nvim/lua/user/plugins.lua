@@ -38,11 +38,9 @@ packer.init({
 	},
 })
 
--- Install your plugins here
 return packer.startup(function(use)
-	-- My plugins here
+	use({ "ibhagwan/fzf-lua" })
 	use({ "junegunn/fzf", dir = "~/.fzf", run = "./install --all" })
-	use({ "junegunn/fzf.vim" })
 	use("ggandor/lightspeed.nvim")
 	use("vimwiki/vimwiki")
 	use("dstein64/vim-startuptime")

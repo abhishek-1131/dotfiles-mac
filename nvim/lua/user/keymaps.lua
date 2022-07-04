@@ -16,15 +16,16 @@ vim.keymap.set("i", "kj", "<Esc>")
 vim.keymap.set("n", "<space>bh", ":Startify<CR>")
 
 --Leader Mappings
-vim.keymap.set("n", "<Leader>.", ":Telescope find_files cwd=~/dotfiles/nvim<CR>")
-vim.keymap.set("n", "<Leader>f", ":Telescope find_files<CR>")
-vim.keymap.set("n", "<Leader>h", ":Telescope oldfiles<CR>")
-vim.keymap.set("n", "<Leader>g", ":Telescope live_grep<CR>")
-vim.keymap.set("n", "<Leader>d", ":Telescope diagnostics<CR>")
-vim.keymap.set("n", "<Leader>s", ":Telescope current_buffer_fuzzy_find<CR>")
-vim.keymap.set("n", "<Leader>,", ":Telescope buffers<CR>")
-vim.keymap.set("n", "<Leader>m", ":Telescope marks<CR>")
-vim.keymap.set("n", "<Leader>a", ":Telescope live_grep grep_open_files=true<CR>")
+vim.keymap.set("n", "<Leader>.", ":FzfLua files cwd=~/dotfiles/nvim<CR>")
+vim.keymap.set("n", "<Leader>f", ":FzfLua files<CR>")
+vim.keymap.set("n", "<Leader>h", ":FzfLua oldfiles<CR>")
+vim.keymap.set("n", "<Leader>g", ":FzfLua live_grep<CR>")
+vim.keymap.set("n", "<Leader>d", ":FzfLua lsp_document_diagnostics<CR>")
+-- vim.keymap.set("n", "<Leader>w", ":FzfLua lsp_workspace_diagnostics<CR>")
+vim.keymap.set("n", "<Leader>s", ":FzfLua blines<CR>")
+vim.keymap.set("n", "<Leader>a", ":FzfLua lines<CR>")
+vim.keymap.set("n", "<Leader>,", ":FzfLua buffers<CR>")
+vim.keymap.set("n", "<Leader>m", ":FzfLua marks<CR>")
 vim.keymap.set("n", "<Leader>x", ":Telescope neoclip<CR>")
 vim.keymap.set( "n", "<leader>cd", ":lua require'telescope'.extensions.zoxide.list{}<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>q", ":Telescope file_browser<CR>", { noremap = true })
@@ -80,7 +81,7 @@ vim.keymap.set("n", "<C-L>", "<C-W><C-L>")
 vim.keymap.set("n", "<C-H>", "<C-W><C-H>")
 
 --Misc
-vim.keymap.set("n", "gp", ":Gitsigns preview_hunk<CR>")
+vim.keymap.set("n", "gh", ":Gitsigns preview_hunk<CR>")
 
 --Python
 vim.cmd([[ 

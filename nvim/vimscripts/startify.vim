@@ -23,7 +23,6 @@ let g:startify_bookmarks = [
             \ ]
 
 let g:startify_commands = [
-            \{',s' : 'StartupTime'},
             \]
 
 
