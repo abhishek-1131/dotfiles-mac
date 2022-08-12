@@ -18,12 +18,13 @@ require "user.telescope_project"
 require "user.impatient"
 require "user.illuminate"
 require "user.indentline"
-require "user.alpha"
 require "user.lsp"
 require "user.dap"
 require "user.telescope_filebrowser"
 require "user.telescope_fzf_native"
 
+-- Vimcmds
+vim.cmd("source $HOME/.config/nvim/vimscripts/vimcmds.vim")
 --Startify
 vim.cmd("source $HOME/.config/nvim/vimscripts/startify.vim")
 --VimWiki
