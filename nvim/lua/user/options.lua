@@ -38,3 +38,4 @@ vim.opt.fillchars.eob=" "
 vim.opt.shortmess:append "c"
 vim.opt.whichwrap:append("<,>,[,],h,l")
 vim.opt.iskeyword:append("-")
+vim.g.python3_host_prog = '/opt/homebrew/Caskroom/miniforge/base/bin/python3'

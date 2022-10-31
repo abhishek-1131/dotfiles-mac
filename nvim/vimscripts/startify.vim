@@ -20,6 +20,7 @@ let g:startify_bookmarks = [
             \ { 'p': '~/.config/nvim/lua/user/plugins.lua'},
             \ { 'v': '~/vimwiki/Vim_Cheatsheet.md' },
             \ { 's': '~/Desktop/scratchpad.py' },
+            \ { 'n': '~/vimwiki/Course_Notes.md' },
             \ ]
 
 let g:startify_commands = [
