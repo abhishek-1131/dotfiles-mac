@@ -20,8 +20,6 @@ require "user.illuminate"
 require "user.indentline"
 require "user.lsp"
 require "user.dap"
-require "user.telescope_filebrowser"
-require "user.telescope_fzf_native"
 
 -- Vimcmds
 vim.cmd("source $HOME/.config/nvim/vimscripts/vimcmds.vim")

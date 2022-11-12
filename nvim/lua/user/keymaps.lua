@@ -1,3 +1,6 @@
+-- Silent keymap option
+local opts = { silent = true }
+
 --Remap space as leader key
 vim.g.mapleader = ","
 vim.g.maplocalleader = ","
@@ -88,3 +91,15 @@ vim.cmd([[
 autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 ]])
+
+-- DAP
+-- vim.keymap("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<cr>", opts)
+-- vim.keymap("n", "<leader>dc", "<cmd>lua require'dap'.continue()<cr>", opts)
+-- vim.keymap("n", "<leader>di", "<cmd>lua require'dap'.step_into()<cr>", opts)
+-- vim.keymap("n", "<leader>do", "<cmd>lua require'dap'.step_over()<cr>", opts)
+-- vim.keymap("n", "<leader>dO", "<cmd>lua require'dap'.step_out()<cr>", opts)
+-- vim.keymap("n", "<leader>dr", "<cmd>lua require'dap'.repl.toggle()<cr>", opts)
+-- vim.keymap("n", "<leader>dl", "<cmd>lua require'dap'.run_last()<cr>", opts)
+-- vim.keymap("n", "<leader>du", "<cmd>lua require'dapui'.toggle()<cr>", opts)
+-- vim.keymap("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", opts)
+
