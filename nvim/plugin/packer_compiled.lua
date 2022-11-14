@@ -245,15 +245,20 @@ _G.packer_plugins = {
     path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["project.nvim"] = {
+  ["popup.nvim"] = {
     loaded = true,
-    path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/project.nvim",
-    url = "https://github.com/ahmedkhalf/project.nvim"
+    path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/popup.nvim",
+    url = "https://github.com/nvim-lua/popup.nvim"
   },
   tagbar = {
     loaded = true,
     path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/tagbar",
     url = "https://github.com/preservim/tagbar"
+  },
+  ["telescope-zoxide"] = {
+    loaded = true,
+    path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/telescope-zoxide",
+    url = "https://github.com/jvgrootveld/telescope-zoxide"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -274,6 +279,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-illuminate"] = {
     loaded = true,

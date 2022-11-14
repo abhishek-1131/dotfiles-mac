@@ -31,7 +31,7 @@ vim.keymap.set("n", "<Leader>,", ":FzfLua buffers<CR>")
 vim.keymap.set("n", "<Leader>m", ":FzfLua marks<CR>")
 vim.keymap.set("n", "<Leader>x", ":Telescope neoclip<CR>")
 vim.keymap.set( "n", "<leader>cd", ":lua require'telescope'.extensions.zoxide.list{}<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>q", ":Telescope file_browser<CR>", { noremap = true })
+vim.keymap.set("n", "<leader>q", ":cd %:p:h<CR>:pwd<CR>")
 
 vim.keymap.set("n", "<leader>ci", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>", { noremap = true, silent = true })
 vim.keymap.set("x", "<leader>ci", '<ESC><CMD>lua require("Comment.api").toggle.linewise(vim.fn.visualmode())<CR>')
