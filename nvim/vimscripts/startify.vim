@@ -16,7 +16,7 @@ let g:startify_bookmarks = [
             \ { 'c': '~/.config' },
             \ { 'x': '~/.tmux.conf' },
             \ { 'f': '~/.config/fish/config.fish'},
-            \ { 'm': '~/.config/nvim/lua/user/keymaps.lua'},
+            \ { 'm': '~/.config/nvim/lua/user/keymap/init.lua'},
             \ { 'p': '~/.config/nvim/lua/user/plugins.lua'},
             \ { 'v': '~/vimwiki/Vim_Cheatsheet.md' },
             \ { 's': '~/Desktop/scratchpad.py' },
@@ -27,7 +27,7 @@ let g:startify_commands = [
             \]
 
 
-let g:startify_files_number = 3
+let g:startify_files_number = 4
 "let g:startify_dir_number = 2
 let g:startify_custom_header = [
             \ '    __          .__           .__.__   ___.            ',

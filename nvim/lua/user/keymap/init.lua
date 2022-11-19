@@ -1,6 +1,26 @@
 -- Silent keymap option
 local opts = { silent = true }
 
+local Remap = require("user.keymap.keymap")
+local nnoremap = Remap.nnoremap
+local vnoremap = Remap.vnoremap
+local inoremap = Remap.inoremap
+local xnoremap = Remap.xnoremap
+local nmap = Remap.nmap
+
+vim.keymap.set("n", "<leader>D", [["_dd]], { desc = "Wipe line" })
+-- clipboard buffer management for yank and delete
+-- xnoremap("<leader>p", "\"_dP")
+--
+-- nnoremap("<leader>y", "\"+y")
+-- vnoremap("<leader>y", "\"+y")
+-- nmap("<leader>Y", "\"+Y")
+--
+-- nnoremap("<leader>d", "\"_d")
+-- vnoremap("<leader>d", "\"_d")
+--
+-- vnoremap("<leader>d", "\"_d")
+
 --Remap space as leader key
 vim.g.mapleader = ","
 vim.g.maplocalleader = ","
@@ -30,15 +50,25 @@ vim.keymap.set("n", "<Leader>a", ":FzfLua lines<CR>")
 vim.keymap.set("n", "<Leader>,", ":FzfLua buffers<CR>")
 vim.keymap.set("n", "<Leader>m", ":FzfLua marks<CR>")
 vim.keymap.set("n", "<Leader>x", ":Telescope neoclip<CR>")
-vim.keymap.set( "n", "<leader>cd", ":lua require'telescope'.extensions.zoxide.list{}<CR>", { noremap = true, silent = true })
+vim.keymap.set(
+	"n",
+	"<leader>cd",
+	":lua require'telescope'.extensions.zoxide.list{}<CR>",
+	{ noremap = true, silent = true }
+)
 vim.keymap.set("n", "<leader>q", ":cd %:p:h<CR>:pwd<CR>")
 
-vim.keymap.set("n", "<leader>ci", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>", { noremap = true, silent = true })
+vim.keymap.set(
+	"n",
+	"<leader>ci",
+	"<cmd>lua require('Comment.api').toggle.linewise.current()<CR>",
+	{ noremap = true, silent = true }
+)
 vim.keymap.set("x", "<leader>ci", '<ESC><CMD>lua require("Comment.api").toggle.linewise(vim.fn.visualmode())<CR>')
 vim.keymap.set("n", "<Leader>r", ":luafile %<CR>")
 vim.keymap.set("n", "<Leader>e", ":NvimTreeToggle<CR>")
 vim.keymap.set("n", "<Leader>t", ":TagbarToggle<CR>")
-vim.keymap.set("n", "<Leader>bf", ":Format<CR>")
+vim.keymap.set("n", "<leader>bf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>", opts)
 vim.keymap.set("n", "<Leader>js", ":G<CR>")
 vim.keymap.set("n", "<Leader>jh", ":diffget //2<CR>")
 vim.keymap.set("n", "<Leader>jl", ":diffget //3<CR>")
@@ -102,4 +132,3 @@ autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellesca
 -- vim.keymap("n", "<leader>dl", "<cmd>lua require'dap'.run_last()<cr>", opts)
 -- vim.keymap("n", "<leader>du", "<cmd>lua require'dapui'.toggle()<cr>", opts)
 -- vim.keymap("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", opts)
-
