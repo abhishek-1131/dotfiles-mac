@@ -38,9 +38,13 @@ alias gp="git pull"
 alias cab="conda activate base"
 alias r="ranger"
 alias lmfs="cd ~/Documents/LMFS && conda activate pytorch && ll"
+alias z="cd (dirh | fzf | cut -c 5-)"
 
+set PATH /opt/homebrew/lib/python3.9/site-packages $PATH
 set PATH /opt/homebrew/opt/ruby/bin $PATH
 set PATH /Users/kehsihba/.cargo/bin $PATH
+set PATH /opt/homebrew/Caskroom/miniforge/base/bin $PATH
+
 eval (/opt/homebrew/bin/brew shellenv)
 
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_341.jdk/Contents/Home/"
