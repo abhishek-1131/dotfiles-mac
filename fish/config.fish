@@ -38,7 +38,8 @@ alias gp="git pull"
 alias cab="conda activate base"
 alias r="ranger"
 alias lmfs="cd ~/Documents/LMFS && conda activate pytorch && ll"
-alias z="cd (dirh | fzf | cut -c 5-)"
+alias z="cd (dirh | ghead -n -2 | fzf | cut -c 5-)"
+alias x="xplr"
 
 set PATH /opt/homebrew/lib/python3.9/site-packages $PATH
 set PATH /opt/homebrew/opt/ruby/bin $PATH
