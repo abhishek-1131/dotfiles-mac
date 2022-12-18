@@ -89,11 +89,6 @@ _G.packer_plugins = {
     path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["alpha-nvim"] = {
-    loaded = true,
-    path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/alpha-nvim",
-    url = "https://github.com/goolord/alpha-nvim"
-  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -279,6 +274,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
+  },
+  ["vim-jukit"] = {
+    loaded = true,
+    path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/vim-jukit",
+    url = "https://github.com/luk400/vim-jukit"
   },
   ["vim-startify"] = {
     loaded = true,

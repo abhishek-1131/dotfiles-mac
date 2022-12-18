@@ -1,12 +1,12 @@
 -- Silent keymap option
 local opts = { noremap = true, silent = true }
 
-local Remap = require("user.keymap.keymap")
-local nnoremap = Remap.nnoremap
-local vnoremap = Remap.vnoremap
-local inoremap = Remap.inoremap
-local xnoremap = Remap.xnoremap
-local nmap = Remap.nmap
+-- local Remap = require("user.keymap.keymap")
+-- local nnoremap = Remap.nnoremap
+-- local vnoremap = Remap.vnoremap
+-- local inoremap = Remap.inoremap
+-- local xnoremap = Remap.xnoremap
+-- local nmap = Remap.nmap
 
 vim.keymap.set("n", "<leader>D", [["_dd]], { desc = "Wipe line" })
 -- clipboard buffer management for yank and delete
@@ -31,8 +31,10 @@ vim.keymap.set("n", "Ð", ":bd <CR>")
 vim.keymap.set("n", "Q", "<Nop>")
 vim.keymap.set("n", "Y", "y$")
 vim.keymap.set("n", "n", "nzzzv")
-vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "N", "Nzzzv")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<CR>", "<Nop>")
 vim.keymap.set("i", "jk", "<Esc>")
 vim.keymap.set("i", "kj", "<Esc>")
