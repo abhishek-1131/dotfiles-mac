@@ -38,7 +38,10 @@ vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<CR>", "<Nop>")
 vim.keymap.set("i", "jk", "<Esc>")
 vim.keymap.set("i", "kj", "<Esc>")
-vim.keymap.set("n", "<space>bh", ":Startify<CR>")
+
+--Dealing with word wrap
+vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
+vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
 --lua
 vim.keymap.set("n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)

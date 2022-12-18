@@ -26,7 +26,6 @@ let g:startify_bookmarks = [
 let g:startify_commands = [
             \]
 
-
 let g:startify_files_number = 4
 "let g:startify_dir_number = 2
 let g:startify_custom_header = [

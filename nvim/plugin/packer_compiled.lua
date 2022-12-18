@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
-  ["DAPInstall.nvim"] = {
-    loaded = true,
-    path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/DAPInstall.nvim",
-    url = "https://github.com/ravenxrz/DAPInstall.nvim"
-  },
   LuaSnip = {
     loaded = true,
     path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -164,6 +159,11 @@ _G.packer_plugins = {
     path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["marks.nvim"] = {
+    loaded = true,
+    path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/marks.nvim",
+    url = "https://github.com/chentoast/marks.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
@@ -188,16 +188,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
-  },
-  ["nvim-dap"] = {
-    loaded = true,
-    path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/nvim-dap",
-    url = "https://github.com/mfussenegger/nvim-dap"
-  },
-  ["nvim-dap-ui"] = {
-    loaded = true,
-    path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
-    url = "https://github.com/rcarriga/nvim-dap-ui"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -234,6 +224,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  playground = {
+    loaded = true,
+    path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/playground",
+    url = "https://github.com/nvim-treesitter/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
@@ -274,11 +269,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
-  },
-  ["vim-jukit"] = {
-    loaded = true,
-    path = "/Users/kehsihba/.local/share/nvim/site/pack/packer/start/vim-jukit",
-    url = "https://github.com/luk400/vim-jukit"
   },
   ["vim-startify"] = {
     loaded = true,
