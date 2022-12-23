@@ -15,3 +15,4 @@ require "user.after.impatient"
 require "user.after.illuminate"
 require "user.after.indentline"
 require "user.after.dap"
+require('leap').add_default_mappings()

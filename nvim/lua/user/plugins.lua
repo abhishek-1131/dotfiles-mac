@@ -42,14 +42,14 @@ return packer.startup(function(use)
 	--------------------------------------------------------------------
 	-- Additional Plugins
 	--------------------------------------------------------------------
-  -- use({ "luk400/vim-jukit" })
+	-- use({ "luk400/vim-jukit" })
 	use({ "chentoast/marks.nvim" })
 	use({ "jvgrootveld/telescope-zoxide" })
 	use({ "nvim-lua/popup.nvim" })
 	use({ "tpope/vim-fugitive" })
 	use({ "ibhagwan/fzf-lua" })
 	use({ "junegunn/fzf", dir = "~/.fzf", run = "./install --all" })
-	use("ggandor/lightspeed.nvim")
+	use("ggandor/leap.nvim")
 	use("vimwiki/vimwiki")
 	use("dstein64/vim-startuptime")
 	use("mhinz/vim-startify")
@@ -113,7 +113,7 @@ return packer.startup(function(use)
 		"nvim-treesitter/nvim-treesitter",
 		commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac",
 	})
-	use({ "nvim-treesitter/playground"})
+	use({ "nvim-treesitter/playground" })
 
 	-- Git
 	use({ "lewis6991/gitsigns.nvim", commit = "f98c85e7c3d65a51f45863a34feb4849c82f240f" })
