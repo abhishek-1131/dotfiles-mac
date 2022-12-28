@@ -1,29 +1,13 @@
 -- Silent keymap option
 local opts = { noremap = true, silent = true }
 
--- local Remap = require("user.keymap.keymap")
--- local nnoremap = Remap.nnoremap
--- local vnoremap = Remap.vnoremap
--- local inoremap = Remap.inoremap
--- local xnoremap = Remap.xnoremap
--- local nmap = Remap.nmap
-
-vim.keymap.set("n", "<leader>D", [["_dd]], { desc = "Wipe line" })
--- clipboard buffer management for yank and delete
--- xnoremap("<leader>p", "\"_dP")
---
--- nnoremap("<leader>y", "\"+y")
--- vnoremap("<leader>y", "\"+y")
--- nmap("<leader>Y", "\"+Y")
---
--- nnoremap("<leader>d", "\"_d")
--- vnoremap("<leader>d", "\"_d")
---
--- vnoremap("<leader>d", "\"_d")
-
 --Remap space as leader key
 vim.g.mapleader = ","
 vim.g.maplocalleader = ","
+
+--delete to blackhole buffer
+vim.keymap.set("n", "x", "\"_x")
+vim.keymap.set("v", "x", "\"_x")
 
 --Basic
 vim.cmd("command! W w")
@@ -38,7 +22,6 @@ vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<CR>", "<Nop>")
 vim.keymap.set("i", "jk", "<Esc>")
 vim.keymap.set("i", "kj", "<Esc>")
-vim.keymap.set("n", "<space>bh", ":Startify<CR>")
 
 --Dealing with word wrap
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })

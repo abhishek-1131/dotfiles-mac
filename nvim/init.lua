@@ -1,6 +1,6 @@
 require "user.after.impatient"
 require "user.options"
-require "user.keymap"
+require "user.keymaps"
 require "user.plugins"
 require "user.lsp"
 require "user.after"
