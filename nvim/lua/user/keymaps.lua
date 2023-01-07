@@ -8,6 +8,7 @@ vim.g.maplocalleader = ","
 --delete to blackhole buffer
 vim.keymap.set("n", "x", "\"_x")
 vim.keymap.set("v", "x", "\"_x")
+vim.keymap.set("v", "x", "\"_x")
 
 --Basic
 vim.cmd("command! W w")
@@ -44,6 +45,10 @@ vim.keymap.set("n", "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
 vim.keymap.set("n", "<leader>ls", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
 vim.keymap.set("n", "<leader>lq", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
 
+--Clipboard / Yank Management
+vim.keymap.set("n", "<Leader>cb", ":Telescope neoclip a<CR>")
+vim.keymap.set("n", "<Leader>p", "\"ap<CR>")
+
 --Leader Mappings
 vim.keymap.set("n", "<Leader>.", ":FzfLua files cwd=~/dotfiles/nvim<CR>")
 vim.keymap.set("n", "<Leader>f", ":FzfLua files<CR>")
@@ -55,10 +60,9 @@ vim.keymap.set("n", "<Leader>s", ":FzfLua blines<CR>")
 vim.keymap.set("n", "<Leader>a", ":FzfLua lines<CR>")
 vim.keymap.set("n", "<Leader>,", ":FzfLua buffers<CR>")
 vim.keymap.set("n", "<Leader>m", ":FzfLua marks<CR>")
-vim.keymap.set("n", "<Leader>x", ":Telescope neoclip<CR>")
 vim.keymap.set(
 	"n",
-	"<leader>cd",
+	"<leader>z",
 	":lua require'telescope'.extensions.zoxide.list{}<CR>",
 	{ noremap = true, silent = true }
 )
