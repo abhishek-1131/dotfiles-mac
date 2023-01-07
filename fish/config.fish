@@ -22,7 +22,7 @@ status is-interactive && eval /opt/homebrew/Caskroom/miniforge/base/bin/conda "s
 # <<< conda initialize <<<
 
 alias ll="exa --long --icons"
-alias ll2="ll --long --tree --level=2 -a"
+alias ll2="ll --long --tree --level=2"
 alias ll3="ll --long --tree --level=3 -a"
 alias ll5="ll --long --tree --level=5 -a"
 alias vi="nvim"
@@ -39,6 +39,7 @@ alias cab="conda activate base"
 alias r="ranger"
 alias lmfs="cd ~/Documents/LMFS && conda activate pytorch && ll"
 alias z="cd (dirh | ghead -n -2 | fzf | cut -c 5-)"
+alias cdc="cd ~/Documents/courses && ll2"
 
 set PATH /opt/homebrew/lib/python3.9/site-packages $PATH
 set PATH /opt/homebrew/opt/ruby/bin $PATH
