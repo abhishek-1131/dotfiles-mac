@@ -13,12 +13,11 @@ let g:startify_bookmarks = [
             \ { 't': '~/vimwiki/tooling_config.md' },
             \ { 'D': '~/Documents/' },
             \ { 'd': '~/Downloads/' },
-            \ { 'c': '~/.config' },
+            \ { 'c': '~/.vimwiki/Vim_Cheatsheet' },
             \ { 'x': '~/.tmux.conf' },
             \ { 'f': '~/.config/fish/config.fish'},
             \ { 'm': '~/.config/nvim/lua/user/keymaps.lua'},
             \ { 'p': '~/.config/nvim/lua/user/plugins.lua'},
-            \ { 'v': '~/vimwiki/Vim_Cheatsheet.md' },
             \ { 's': '~/Desktop/scratchpad.py' },
             \ { 'n': '~/vimwiki/Course_Notes.md' },
             \ ]

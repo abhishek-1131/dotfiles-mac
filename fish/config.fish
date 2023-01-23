@@ -39,7 +39,10 @@ alias cab="conda activate base"
 alias r="ranger"
 alias lmfs="cd ~/Documents/LMFS && conda activate pytorch && ll"
 alias z="cd (dirh | ghead -n -2 | fzf | cut -c 5-)"
+alias lab="jupyter lab"
 alias cdc="cd ~/Documents/courses && ll2"
+alias bdl2="cd ~/Documents/courses/bdl2 && ll2 && tmux new-window -n lab 'lab'"
+alias fun="cd ~/Documents/fun/ && ll"
 
 set PATH /opt/homebrew/lib/python3.9/site-packages $PATH
 set PATH /opt/homebrew/opt/ruby/bin $PATH
