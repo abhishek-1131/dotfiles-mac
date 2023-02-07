@@ -13,7 +13,7 @@ let g:startify_bookmarks = [
             \ { 't': '~/vimwiki/tooling_config.md' },
             \ { 'D': '~/Documents/' },
             \ { 'd': '~/Downloads/' },
-            \ { 'c': '~/.vimwiki/Vim_Cheatsheet' },
+            \ { 'c': '~/vimwiki/Vim_Cheatsheet.md' },
             \ { 'x': '~/.tmux.conf' },
             \ { 'f': '~/.config/fish/config.fish'},
             \ { 'm': '~/.config/nvim/lua/user/keymaps.lua'},
@@ -25,16 +25,14 @@ let g:startify_bookmarks = [
 let g:startify_commands = [
             \]
 
-let g:startify_files_number = 4
+let g:startify_files_number = 7
 "let g:startify_dir_number = 2
 let g:startify_custom_header = [
-            \ '    __          .__           .__.__   ___.            ',
-            \ '   |  | __ ____ |  |__   _____|__|  |__\_ |__ _____    ',
-            \ '   |  |/ // __ \|  |  \ /  ___/  |  |  \| __ \\__  \   ',
-            \ '   |    <\  ___/|   Y  \\___ \|  |   Y  \ \_\ \/ __ \_ ',
-            \ '   |__|_ \\___  >___|  /____  >__|___|  /___  (____  / ',
-            \ '        \/    \/     \/     \/        \/    \/     \/  ',
-            \ '',
+            \ '               ',
+\ '     /      /      o  /   /      ',
+\ '    /<  _  /_  (  ,  /_  /  __,  ',
+\ '   / |_(/_/ /_/_)_(_/ /_/_)(_/(_ ',
+\ '                              ',
             \ ]
 
 let g:webdevicons_enable_startify = 1
